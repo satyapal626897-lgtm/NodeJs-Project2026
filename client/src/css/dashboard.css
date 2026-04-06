@@ -1,0 +1,122 @@
+/* General body */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #fff0f5; /* soft lavender-pink background */
+  color: #4b004b; /* deep purple text */
+}
+
+/* Dashboard layout */
+.dashboard {
+  display: flex;
+  height: 100vh;
+  background: #fff0f5;
+  color: #4b004b;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background: #ffdde1; /* pastel pink */
+  padding: 20px;
+  box-shadow: 2px 0 10px rgba(255, 105, 180, 0.3);
+  border-radius: 0 20px 20px 0;
+}
+
+.logo {
+  margin-bottom: 30px;
+  color: #ff69b4; /* hot pink logo */
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #8b008b; /* dark purple text */
+  font-weight: 500;
+}
+
+.menu-item {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.menu-item:hover {
+  background: #ffb6c1; /* light pink hover */
+}
+
+.menu-item:hover a {
+  color: #ff1493; /* vibrant pink */
+}
+
+.menu-item.active {
+  background: #ff69b4; /* hot pink active menu */
+  color: white;
+}
+
+/* Main content */
+.main {
+  flex: 1;
+  padding: 20px;
+  background: #fff0f5;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile button {
+  background: #ff69b4; /* hot pink button */
+  padding: 6px 12px;
+  border-radius: 12px;
+  color: white;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.profile button:hover {
+  background: #ff1493; /* bright pink hover */
+}
+
+/* Welcome box */
+.welcome-box {
+  margin-top: 40px;
+  background: #ffe4f0; /* soft pinkish lavender */
+  padding: 50px;
+  border-radius: 20px;
+  text-align: center;
+  border:2px solid rgb(231, 10, 47);
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.3);
+}
+
+.welcome-box h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #ff1493;
+}
+
+.welcome-box p {
+  color: #8b008b;
+}
+
+/* Status indicators */
+.status.active {
+  color: #32cd32; /* green still works */
+}
+
+.status.inactive {
+  color: #ff4500; /* orange-red for inactive */
+}
