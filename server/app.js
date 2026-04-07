@@ -3,22 +3,32 @@ const app = express();
 const cors = require("cors");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
-const adminRoute =require("./routes/adminRoute");
-const userRoute =require("./routes/userRoute");
+require("dotenv").config();   
 
-app.use(bodyParser.urlencoded())
-app.use(bodyParser.json())
+const adminRoute = require("./routes/adminRoute");
+const userRoute = require("./routes/userRoute");
 
+
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 app.use(cors());
 
-mongoose.connect("mongodb://127.0.0.1:27017/taskmanagement26").then(() => {
-    console.log("mongodb is successfully connected!!")
+
+mongoose.connect(process.env.MONGO_URL)
+.then(() => {
+    console.log("MongoDB connected successfully!!");
 })
+.catch((err) => {
+    console.log("MongoDB connection error:", err);
+});
 
-app.use("/admin", adminRoute)
-app.use("/user", userRoute)
+
+app.use("/admin", adminRoute);
+app.use("/user", userRoute);
 
 
-app.listen(8000, () => {
-    console.log("server run on 8000");
-})
+const PORT = process.env.PORT || 8000;
+
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+});
