@@ -15,7 +15,7 @@ const Home = () => {
 
         if (usertype == "admin") {
 
-            let api = `${API}admin/userlogin`
+            let api = `${API}/admin/userlogin`
             const response = await axios.post(api, { email, password })
             localStorage.setItem("admin", response.data.admin.email)
             localStorage.setItem("adminname", response.data.admin.name)
