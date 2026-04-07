@@ -7,7 +7,9 @@ const WelcomePage = () => {
             <div className="main">
 
                 <div className="welcome-box">
-                    <h2>Welcome to Dashboard </h2>
+                    <h2>Welcome to Dashboard 
+                        
+                    </h2>
                     <p>Manage everything from here easily.</p>
                 </div>
 
