@@ -3,22 +3,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #111827;
+  background-color: #cf7dc4; /* dark pinkish bg */
 }
 
 .user-form-box {
   width: 370px;
   padding: 25px;
   border-radius: 12px;
-  background-color: #1f2937;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  background-color: #2b132b; /* dark pink box */
+  box-shadow: 0 8px 25px rgba(255, 105, 180, 0.2);
   color: white;
 }
 
 .user-form-box h1 {
   text-align: center;
   margin-bottom: 25px;
-  font-size:medium;
+  font-size: medium;
 }
 
 .user-input-group {
@@ -30,27 +30,28 @@
 .user-input-group label {
   margin-bottom: 5px;
   font-size: 14px;
-  color: #9ca3af;
+  color: #f9a8d4; /* light pink text */
 }
 
 .user-input-group input,
 .user-input-group select {
   padding: 10px;
-  border: 1px solid #374151;
+  border: 1px solid #4b1d3f;
   outline: none;
   border-radius: 8px;
-  background-color: #111827;
+  background-color: #f3267c;
   color: white;
   font-size: 14px;
 }
 
 .user-input-group input::placeholder {
-  color: #6b7280;
+  color: #d946ef; /* pink placeholder */
 }
 
 .user-input-group input:focus,
 .user-input-group select:focus {
-  border-color: #2563eb;
+  border-color: #ff4da6; /* focus pink */
+  box-shadow: 0 0 5px #ff4da6;
 }
 
 .user-btn {
@@ -58,12 +59,12 @@
   padding: 12px;
   border: none;
   border-radius: 8px;
-  background-color: #2563eb;
+  background-color: #ff4da6; /* main pink button */
   color: white;
   font-size: 16px;
   cursor: pointer;
 }
 
 .user-btn:hover {
-  background-color: #1d4ed8;
+  background-color: #e60073; /* darker pink hover */
 }

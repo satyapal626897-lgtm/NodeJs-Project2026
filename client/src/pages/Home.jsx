@@ -15,7 +15,7 @@ const Home = () => {
 
         if (usertype == "admin") {
 
-            let api = `${API}/admin/userlogin`
+            let api = `${API}/admin/userlogin`;
             const response = await axios.post(api, { email, password })
             localStorage.setItem("admin", response.data.admin.email)
             localStorage.setItem("adminname", response.data.admin.name)
@@ -25,7 +25,7 @@ const Home = () => {
 
         } else {
 
-            let api = `${API}/user/userlogin`
+            let api = `${API}/user/userlogin`;
             const response = await axios.post(api, { email, password })
             localStorage.setItem("username", response.data.user.name);
             localStorage.setItem("useremail", response.data.user.email);

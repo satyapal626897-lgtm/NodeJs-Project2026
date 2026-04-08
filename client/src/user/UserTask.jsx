@@ -5,7 +5,7 @@ import Table from 'react-bootstrap/Table';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Form from 'react-bootstrap/Form';
-const API = import.meta.env.VITE_API_URL;
+// const API = import.meta.env.VITE_API_URL;
 
 const UserTask = () => {
   const [mydata, setMydata] = useState([]);
@@ -20,7 +20,7 @@ const UserTask = () => {
     setShow(true);
   }
   const loadData = async () => {
-    let api = `${API}/user/getusertask/?id=${localStorage.getItem("userid")}`
+    let api = `${API}/getusertask/?id=${localStorage.getItem("userid")}`
     const response = await axios.get(api);
     console.log(response.data);
     setMydata(response.data);

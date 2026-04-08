@@ -1,19 +1,18 @@
-
 table {
   margin: 20px auto;
   width: 95%;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(255, 105, 180, 0.3);
 }
 
 thead {
-  background-color: #343a40;
+  background-color: #ff4da6; /* pink header */
   color: #fff;
 }
 
 tbody tr:hover {
-  background-color: #495057;
+  background-color: #ff80bf; /* light pink hover */
   cursor: pointer;
 }
 
@@ -22,10 +21,14 @@ button {
   border-radius: 5px;
   padding: 5px 15px;
   transition: 0.3s;
+  background-color: #ff4da6;
+  color: white;
+  border: none;
 }
 
 button:hover {
   opacity: 0.8;
+  background-color: #e60073;
 }
 
 /* Modal styling */
@@ -35,7 +38,7 @@ button:hover {
 }
 
 .modal-header {
-  background-color: #007bff;
+  background-color: #ff4da6; /* pink header */
   color: white;
   border-bottom: none;
 }
